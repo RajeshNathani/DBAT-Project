@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            Bookstore
+          </a>
+        </div>
+      </nav> <br>
+    <div class="container px-4">
+        <div class="row">
+            <div class="col">
+                <img src={{book_image}} alt="">
+            </div>
+            <div class="col-md-8">
+                <h1>{{book_name}}</h1>
+                <small class="text-muted">by {{book_author}}</small> <br><br>
+                <p>{{book_description}}</p>
+                <h4>Buy now only for ₹{{book_quantity}}</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
